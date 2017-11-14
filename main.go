@@ -32,8 +32,13 @@ var debugLoadFromFile = flag.Bool("skip-loader", false, "pass --skip-loader=t to
 
 func main() {
 
+	flag.Parse()
+
 	if *debugLoadFromFile {
+		log.Println("loading assets via Sciter")
 		rscPrefix = filePrefix
+	} else {
+		log.Println("loading assets via custom handler")
 	}
 
 	w, err := sciterWindow.New(sciter.SW_MAIN|sciter.SW_ALPHA|sciter.SW_ENABLE_DEBUG, bounds())
