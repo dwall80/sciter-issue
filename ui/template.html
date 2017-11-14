@@ -1,0 +1,26 @@
+<html custom-frame=layered>
+<!-- head -->
+<head>
+<link rel="stylesheet" type="text/css" href="css/master.css">
+<script src="script/template.tis" type="text/tiscript"></script>
+</head>
+
+<!-- body start -->
+<body>
+
+<!-- window controls -->
+<header role="window-caption">
+  <caption disable class="window-caption">Window Caption</caption>
+  <button class="window-minimise" role="window-minimize">-</button>
+  <button class="window-close" role="window-close">X</button>
+</header>
+
+
+<!-- div will load correctly (but of course without tiscript/css)-->
+<div #content></div>
+
+<!-- frame with src attrib - this will load src correctly initially but Content.load will return empty -->
+<!-- <frame #content src="1.html" /> -->
+
+</body>
+</html>

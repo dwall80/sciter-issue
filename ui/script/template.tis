@@ -1,0 +1,17 @@
+namespace Template {
+
+    var Content = $(#content);
+
+    function LoadFrame(name){
+        view.Log("LoadFrame: " + name + ".html");
+        try{
+            Content.load(self.url(name + ".html"));
+        }catch(e){
+            view.Log("LoadFrame caught ti script error: " + e.message);
+        }
+    }
+
+    function Test(name){
+        view.Log("test called with "+name);
+    }
+}

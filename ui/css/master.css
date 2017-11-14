@@ -1,0 +1,29 @@
+/*
+Window header
+*/
+header {
+    font-weight: bold;
+    width:*;
+    padding: 0dip 15dip;
+    line-height:2.5em;
+    border-bottom: 2px solid #ddd;
+    background-color: #efefef;
+    flow:horizontal;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.window-caption { width:*; }
+
+header button {
+
+    display:block;
+    margin: 0;
+    margin-left:5px;
+    padding: 0dip 3dip;
+    padding-top: 3px;
+    background: none;
+    border: 0px;
+}
+
+header button:hover { font-weight: bold; }
