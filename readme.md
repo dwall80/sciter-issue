@@ -1,3 +1,23 @@
+# Build
+
+If you need to recompile you will need to install go - golang for windows https://golang.org/dl/
+Set up a GOPATH in env vars to point to a working directory and clone this repo into:
+{GOPATH}/github.com/dwall80/sciter-issue
+
+The only dependency is the go-sciter sdk so just run:
+
+`go get github.com/sciter-sdk/go-sciter`
+
+and drop the sciter.dll next to the binary in the repo
+
+you should no be able to build with 
+
+`go build`
+
+
+
+# Usage
+
 You can edit the template.html to switch between frame and div.
 
 I've set up a simple custom asset handler that reads the files in from disk.
