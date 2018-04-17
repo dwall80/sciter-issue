@@ -2,7 +2,7 @@
 
 If you need to recompile you will need to install go - golang for windows https://golang.org/dl/
 Set up a GOPATH in env vars to point to a working directory and clone this repo into:
-{GOPATH}/github.com/dwall80/sciter-issue
+{GOPATH}/github.com/swiftdv8/sciter-issue
 
 The only dependency is the go-sciter sdk so just run:
 
